@@ -1,5 +1,8 @@
-module.exports = function () {
-  let h = "Hello,";
-  let w = "world!";
-  return h + w;
+const User = require('./user');
+
+module.exports = class Hello {
+  greeting() {
+    const user = new User('Freewind');
+    return 'Hello, ' + user.nameBang();
+  }
 };

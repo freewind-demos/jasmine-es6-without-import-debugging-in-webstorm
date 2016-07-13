@@ -1,7 +1,8 @@
-var hello = require('../src/hello');
+var Hello = require('../src/hello');
 
 describe("A suite", function () {
   it("contains spec with an expectation", function () {
-    expect(hello()).toBe("Hello,world!");
+    const hello = new Hello();
+    expect(hello.greeting()).toBe("Hello, Freewind!!");
   });
 });
