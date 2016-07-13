@@ -4,6 +4,7 @@ module.exports =  class User {
   }
 
   nameBang() {
-    return this.name + '!!';
+    const bang = this.name + '!!';
+    return bang;
   }
 }
